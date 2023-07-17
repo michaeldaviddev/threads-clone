@@ -1,0 +1,7 @@
+{
+  "name": "threadsClone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
