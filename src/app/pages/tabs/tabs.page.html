@@ -1,23 +1,23 @@
-<ion-tabs>
+<ion-tabs (ionTabsDidChange)="setSelectedTab()">
   <ion-tab-bar slot="bottom">
     <ion-tab-button tab="home">
-      <ion-icon aria-hidden="true" name="home-outline"></ion-icon>
+      <ion-icon [name]="selectedTab == 'home' ? 'home-sharp' : 'home-outline'"></ion-icon>
     </ion-tab-button>
 
     <ion-tab-button tab="search">
-      <ion-icon aria-hidden="true" name="search-outline"></ion-icon>
+      <ion-icon [name]="selectedTab == 'search' ? 'search-sharp' : 'search-outline'"></ion-icon>
     </ion-tab-button>
 
     <ion-tab-button tab="new">
-      <ion-icon aria-hidden="true" name="create-outline"></ion-icon>
+      <ion-icon [name]="selectedTab == 'new' ? 'create-sharp' : 'create-outline'"></ion-icon>
     </ion-tab-button>
 
     <ion-tab-button tab="activity">
-      <ion-icon aria-hidden="true" name="heart-outline"></ion-icon>
+      <ion-icon [name]="selectedTab == 'activity' ? 'heart-sharp' : 'heart-outline'"></ion-icon>
     </ion-tab-button>
 
     <ion-tab-button tab="profile">
-      <ion-icon aria-hidden="true" name="person-outline"></ion-icon>
+      <ion-icon [name]="selectedTab == 'profile' ? 'person-sharp' : 'person-outline'"></ion-icon>
     </ion-tab-button>
   </ion-tab-bar>
 </ion-tabs>
