@@ -1,4 +1,17 @@
+:host {
+  display: grid;
+  grid-template-columns: 48px minmax(0,1fr);
+  grid-template-rows: 21px 19px max-content max-content;
+}
+
+/* .thread-avatar {
+  grid-column: 1;
+  grid-row: 1/span 2;
+} */
+
 .thread-header {
+  grid-column: 2;
+  grid-row: 1;
   display: flex;
   align-items: center;
 
@@ -11,14 +24,24 @@
   }
 }
 
-.actions {
-  display: flex;
-  height: 36px;
-  align-items: center;
+/* .thread-line {
+  grid-column: 1;
+  grid-row: 3/span 2;
+} */
 
-  ion-icon {
-    height: 20px;
-    width: 20px;
-    margin-right: 16px;
+.thread-body {
+  grid-column: 2;
+  grid-row: 2 / span 2;
+
+  .actions {
+    display: flex;
+    height: 36px;
+    align-items: center;
+  
+    ion-icon {
+      height: 20px;
+      width: 20px;
+      margin-right: 16px;
+    }
   }
 }
