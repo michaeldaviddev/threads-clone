@@ -7,6 +7,12 @@
 .thread-avatar {
   grid-column: 1;
   grid-row: 1 / span 2;
+  padding-top: 4px;
+
+  ion-avatar {
+    height: 36px;
+    width: 36px;
+  }
 }
 
 .thread-header {
