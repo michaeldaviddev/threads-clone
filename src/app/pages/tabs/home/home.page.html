@@ -13,5 +13,5 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-thread></app-thread>
+  <app-thread *ngFor="let post of posts" [post]="post"></app-thread>
 </ion-content>
