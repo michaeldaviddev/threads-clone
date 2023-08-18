@@ -2,3 +2,7 @@ ion-tab-bar {
   --background: transparent;
   --border: none;
 }
+
+.tab-selected {
+  color: var(--ion-text-color, #000);
+}
