@@ -2,6 +2,11 @@
   display: grid;
   grid-template-columns: 48px minmax(0,1fr);
   grid-template-rows: 21px 19px max-content max-content;
+  padding: 12px;
+
+  &:not(:first-of-type) {
+    border-top: 0.5px solid rgba(243, 245, 247, 0.15);
+  }
 }
 
 .thread-avatar {
@@ -20,6 +25,8 @@
   grid-row: 1;
   display: flex;
   align-items: center;
+  font-size: 15px;
+  line-height: 21px;
 
   strong {
     flex-grow: 1;
@@ -33,6 +40,12 @@
 .thread-body {
   grid-column: 2;
   grid-row: 2 / span 2;
+
+  p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 21px;
+  }
 
   .actions {
     display: flex;
